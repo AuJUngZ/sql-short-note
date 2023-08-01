@@ -24,11 +24,19 @@ select city, length(city) from station order by length(city) asc ,city asc fetch
 SELECT SUBSTRING('SQL Tutorial', 1, 3) AS ExtractString; --> output : SQL
 -- notice sql start counting from 1
 
+
+
 -- lower
 SELECT LOWER(SUBSTRING('SQL Tutorial', 1, 3)) AS ExtractString; --> output : sql
+
+
 
 -- LIMIT
 LIMIT 3 --> OUTPUT should be only 3 rows.
 -- tricky LINIT offset , count 
 LIMIT 0,2 --> OUTPUT should be first two rows.
 LIMIT 50,1 --> OUTPUT should be row's 50 of query result.
+
+
+-- offset
+offset 2 --> maen skip first two rows
