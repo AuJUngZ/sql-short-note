@@ -21,5 +21,8 @@ select city, length(city) from station order by length(city) asc ,city asc fetch
 
 
 -- substring
-SELECT SUBSTRING('SQL Tutorial', 1, 3) AS ExtractString; --> SQL
+SELECT SUBSTRING('SQL Tutorial', 1, 3) AS ExtractString; --> output : SQL
 -- notice sql start counting from 1
+
+-- lower
+SELECT LOWER(SUBSTRING('SQL Tutorial', 1, 3)) AS ExtractString; --> output : sql
