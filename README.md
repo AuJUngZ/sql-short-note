@@ -42,46 +42,65 @@ INSERT INTO Students (Name, Age, Gender, Course) VALUES
 ### question for exercise 1
 * Retrieve the names of all female students who are enrolled in the Math course.
 ```sql
-test
+SELECT * from Students s where Gender = 'Female' AND Course = 'Math';
 ```
 * Find the oldest student in the dataset.
 ```sql
-test
+1.
+select MAX(Age), Name from Students s;
+
+2.
+select * from Students s order by Age DESC limit 0,1;
 ```
 * Calculate the average age of female students.
 ```sql
-test
+1.
+select AVG(Age) as 'AVG OF Female' from Students s WHERE Gender = 'Female';
+
+2.
+SELECT SUM(Age) / COUNT(*) from Students s WHERE Gender = 'Female';
 ```
 * List the names of students who are enrolled in the same course as Bob.
 ```sql
-test
+1.
+select Name from Students s where Course = (select Course from Students s where Name = 'Bob')AND Name != 'Bob';
+
+2.
+select s.Name from Students s left join Students s2 on s2.Name  = 'Bob' where s.Course = s2.Course AND s.Name != 'Bob'; -- join come before where
 ```
 * Count how many male students are older than 21.
 ```sql
-test
+select COUNT(*), Name  from Students s WHERE Gender = 'Male' AND Age > 21;
 ```
 * List the courses that have more than two students enrolled.
 ```sql
-test
+select COUNT() as count, Course  from Students s Group by Course
+having count > 2;
 ```
 * Calculate the age difference between the youngest and oldest students.
 ```sql
-test
+select MAX(age) - MIN(age) from Students s ;
+```
+* special item to find student who age > min and age < max
+```sql
+select * from Students s where Age > (select MIN(Age) from Students s) AND Age < (select MAX(Age) from Students s);
 ```
 * Retrieve the names of students whose names contain the letter 'a'.
 ```sql
-test
+SELECT Name from Students s WHERE Name Like '%a%';
 ```
 * Find the number of students in each course.
 ```sql
-test
+select COUNT(Course), Course  from Students s Group by Course
 ```
 * Delete the student record for 'Jessica'.
 ```sql
-test
+DELETE FROM Students WHERE Name = 'Jessica';
 ```
 
 ### Dataset for exercise 2
+
+
 #### Students table
 | ID | Name    |
 |----|---------|
