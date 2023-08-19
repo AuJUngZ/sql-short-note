@@ -8,8 +8,8 @@ Welcome to the MySQL ShortNotes and Exercises repository! Here, you'll find conc
 
 ## Contents
 
-- [Wiki](wiki) - Quick explanations and examples on MySQL concepts.
-- [Exercises](exercises) - Hands-on challenges for practicing MySQL skills.
+- [Wiki](https://github.com/AuJUngZ/sql-short-note/wiki) - Quick explanations and examples on MySQL concepts.
+- [Exercises](https://github.com/AuJUngZ/sql-short-note/wiki/Exercise-1) - Hands-on challenges for practicing MySQL skills.
 
 ## Getting Started
 
