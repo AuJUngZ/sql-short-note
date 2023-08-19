@@ -15,7 +15,7 @@ Welcome to the MySQL ShortNotes and Exercises repository! Here, you'll find conc
 
 1. Clone: `https://github.com/AuJUngZ/sql-short-note.git`
 2. Explore the [`wiki`](https://github.com/AuJUngZ/sql-short-note/wiki) for easy-to-digest MySQL insights.
-3. Enhance skills with practical [`exercises`](https://github.com/AuJUngZ/sql-short-note/wiki).
+3. Enhance skills with practical [`exercises`](https://github.com/AuJUngZ/sql-short-note/wiki/Exercise-1).
 4. Contribute: Fork, improve, and create pull requests.
 
 ## Feedback
