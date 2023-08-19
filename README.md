@@ -1,6 +1,6 @@
 # MySQL ShortNotes and Exercises
 
-![MySQL Logo](https://cdn.pixabay.com/photo/2013/07/12/17/22/database-152091_1280.png)
+<img src="https://cdn.pixabay.com/photo/2013/07/12/17/22/database-152091_1280.png" alt="MySQL Logo" width="200">
 
 Welcome to the MySQL ShortNotes and Exercises repository! Here, you'll find concise notes, exercises, and resources to help you master MySQL.
 
